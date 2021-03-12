@@ -1,0 +1,13 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /usr/share/nginx/singlemomfinder
+permissions:
+  - object: /usr/share/nginx
+    owner: www-data
+    group: www-data
+    mode: 775
+hooks:
+  AfterInstall:
+    - location: codeDeploy/afterInstall.sh
