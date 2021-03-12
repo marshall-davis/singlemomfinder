@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
 <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.css">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -98,7 +98,6 @@
         });
 
         let createMarkers = (map, places) => {
-            console.log(places);
             let $placeList = $('.place.list');
             $placeList.empty();
             let infoWindow = new google.maps.InfoWindow();
